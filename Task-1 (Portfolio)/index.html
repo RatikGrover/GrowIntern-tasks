@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Project</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="particles"></div>
+        <div class="info-text">
+            <h1>Ratik Kumar Grover</h1>
+            <h3>Portfolio</h3>
+            <a href="#about" class="scroll"><i class='bx bxs-down-arrow'></i></a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="header">
+            <h1>What i do :</h1>
+            <a href="#contact" class="hire-me">Hire Me</a> 
+        </div>
+        <div class="card">
+            <img src="assets/me.jpg">
+            <div class="info">
+                <h1>About Me</h1>
+                <p>
+                    I'm a versatile digital artist with a passion for bringing ideas to life. I specialize in crafting stunning 3D car animations using Unreal Engine and Blender, creating engaging videos with After Effects, and building user-friendly websites with HTML, CSS, and JavaScript. Let's collaborate and turn your vision into reality.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="header">
+            <h1>Skills :</h1>
+        </div>
+        <div class="feature-cards">
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-devices'></i>
+                    <h1>3D Animations</h1>
+                    <p>
+                        Explore a diverse collection of my creative endeavors, including 3D car animations created with Unreal Engine and Blender. Each project showcases my creativity, attention to detail, and passion for delivering visually stunning and engaging experiences.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bx-code-alt'></i>
+
+                    <h1>Web Development</h1>
+                    <p>
+                        Behind the scenes, I pride myself on writing clean, efficient, and maintainable code using HTML, CSS, and JavaScript. Learn more about my coding standards and practices that contribute to the functionality and performance of the projects I undertake.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-component'></i>
+                    <h1>Video Editing</h1>
+                    <p>
+                        Dive into my work on video editing, where I use After Effects to combine technical skills with a keen eye for aesthetics. My video projects range from short clips to comprehensive edits, each tailored to convey compelling stories and high-quality visuals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="videos">
+        <div class="header">
+            <h1>Work Samples :</h1>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/td_3nJ_KCaY?si=nIObeJ4wtU44C8iu" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kjVRoaOzNZI?si=bexMrwpAkR2DOiCr" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            </div>
+    </section>
+    <section id="contact">
+        <div class="header">
+            <h1>Contact Me :</h1>
+        </div>
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    
+
+    
+
+
+
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
