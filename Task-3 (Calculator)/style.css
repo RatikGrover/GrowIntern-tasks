@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f093fb, #f5576c); /* Vibrant gradient */
+    margin: 0;
+}
+
+.calculator {
+    border-radius: 20px;   /* Increased for a softer look */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.display {
+    background-color: #222;
+    color: #f0f0f0;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 25px; /* Existing padding */
+    padding-right: 40px; /* Added padding to the right */ 
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;           /* Increased gap */
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #333; /* Darker button background */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
+
+.equal {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #ff9800; /* Orange for emphasis */
+    color: #fff;
+}
+
+.dot {
+    grid-column: span 2;
+}
